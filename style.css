@@ -1,0 +1,87 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+}
+
+ /* and this below */
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  padding: 0 2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with 
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}*/
+
+/*General Styles*/
+
+.container {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 450px;
+}
+
+.content {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header-img {
+    border-radius: 50%;
+    margin-top: -60px;
+    border: 5px solid white;
+}
+
+h2 {
+    padding: .6em 0;
+}
+
+h2 span {
+    color: hsl(0, 0%, 59%);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em 0;
+    margin-top: 2em;
+}
